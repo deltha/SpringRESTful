@@ -6,7 +6,7 @@ pipeline{
   stages{
     stage("checkout"){
       steps{
-        git branch "main" , url: "https://github.com/deltha/SpringRESTful.git"
+        git branch: "main" , url: "https://github.com/deltha/SpringRESTful.git"
       }
     }
     stage("build"){
